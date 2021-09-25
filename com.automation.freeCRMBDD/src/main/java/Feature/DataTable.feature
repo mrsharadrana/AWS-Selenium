@@ -5,6 +5,5 @@ Feature: Demo DataTable
     When User Search for product
       | Lava     | 10000 |
       | Micromax |  5000 |
-      | Gionee   |  8000 |
-      | Samsung  |   958 |
+     
     Then list of phone displays

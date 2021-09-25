@@ -2,31 +2,39 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-02T11:44:25Z" name="Default suite" finished-at="2021-03-02T11:44:38Z" duration-ms="12618">
+  <suite started-at="2021-09-21T15:24:01Z" name="Default suite" finished-at="2021-09-21T15:24:25Z" duration-ms="24042">
     <groups>
     </groups>
-    <test started-at="2021-03-02T11:44:25Z" name="Default test" finished-at="2021-03-02T11:44:38Z" duration-ms="12618">
-      <class name="test.ImplementPagefactoryTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.ImplementPagefactoryTest@61eaec38]" started-at="2021-03-02T17:14:25Z" name="setUp" finished-at="2021-03-02T17:14:30Z" duration-ms="4592" status="PASS">
+    <test started-at="2021-09-21T15:24:01Z" name="Default test" finished-at="2021-09-21T15:24:25Z" duration-ms="24042">
+      <class name="test.Search_TC">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Search_TC@5b799640]" started-at="2021-09-21T20:54:01Z" name="setUp" finished-at="2021-09-21T20:54:04Z" duration-ms="3068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Test()[pri:0, instance:test.ImplementPagefactoryTest@61eaec38]" started-at="2021-03-02T17:14:30Z" name="Test" finished-at="2021-03-02T17:14:37Z" duration-ms="7151" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:test.Search_TC@5b799640]" started-at="2021-09-21T20:54:04Z" name="beforeClass" finished-at="2021-09-21T20:54:04Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.ImplementPagefactoryTest@61eaec38]" started-at="2021-03-02T17:14:37Z" name="tearDown" finished-at="2021-03-02T17:14:38Z" duration-ms="851" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="searchOnFlipkart()[pri:0, instance:test.Search_TC@5b799640]" started-at="2021-09-21T20:54:04Z" name="searchOnFlipkart" finished-at="2021-09-21T20:54:20Z" duration-ms="16437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOnFlipkart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.Search_TC@5b799640]" started-at="2021-09-21T20:54:20Z" name="tearDown" finished-at="2021-09-21T20:54:25Z" duration-ms="4520" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Test status=SUCCESS method=ImplementPagefactoryTest.Test()[pri:0, instance:test.ImplementPagefactoryTest@61eaec38] output={null}]]]>
+                <![CDATA[[TestResult name=searchOnFlipkart status=SUCCESS method=Search_TC.searchOnFlipkart()[pri:0, instance:test.Search_TC@5b799640] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.ImplementPagefactoryTest -->
+        <test-method is-config="true" signature="endTest()[pri:0, instance:test.Search_TC@5b799640]" started-at="2021-09-21T20:54:25Z" name="endTest" finished-at="2021-09-21T20:54:25Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- test.Search_TC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

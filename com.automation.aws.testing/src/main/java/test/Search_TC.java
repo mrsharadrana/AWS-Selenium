@@ -38,33 +38,41 @@ public class Search_TC extends Driver {
 
 	
 	}
-	@Test
-	public void testCase1() throws Exception {
-		String Dishname1 = "Fried Rice";
-//Report Geneartion
-		log=  report.createTest("Zomato Automation","Test Report for Zomato");
-		
-		if(driver.getTitle().contains("Zomato")) {
-			log.pass("Title of the page is :- "+driver.getTitle());
-			log.log(Status.FAIL,"Naviagted :-"+driver.getTitle());
-			log.fail("FAiled");
-			log.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("s.png").build());
-		}
-		System.out.println("Title of the Page :- " + driver.getTitle());
-		// Call Search Method
-		Homepage hm = new Homepage(driver);
-		Web web = new Web(driver);
-		web.halt();
-		hm.search(Dishname1);
-		web.halt();
-		web.halt();
-		System.out.println("Message:- " + driver.getTitle());
-		RestrauantDetailPage rdp = new RestrauantDetailPage(driver);
-		rdp.sorting();
-		System.out.println("Searching High Rating Restaurant");
-	}
-
 	
+//	public void testCase1() throws Exception {
+//		String Dishname1 = "Fried Rice";
+////Report Geneartion
+//		log=  report.createTest("Zomato Automation","Test Report for Zomato");
+//		
+//		if(driver.getTitle().contains("Zomato")) {
+//			log.pass("Title of the page is :- "+driver.getTitle());
+//			log.log(Status.FAIL,"Naviagted :-"+driver.getTitle());
+//			log.fail("FAiled");
+//			log.fail("details", MediaEntityBuilder.createScreenCaptureFromPath("s.png").build());
+//		}
+//		System.out.println("Title of the Page :- " + driver.getTitle());
+//		// Call Search Method
+//		Homepage hm = new Homepage(driver);
+//		Web web = new Web(driver);
+//		web.halt();
+//		hm.search(Dishname1);
+//		web.halt();
+//		web.halt();
+//		System.out.println("Message:- " + driver.getTitle());
+//		RestrauantDetailPage rdp = new RestrauantDetailPage(driver);
+//		rdp.sorting();
+//		System.out.println("Searching High Rating Restaurant");
+//	}
+	@Test
+	public void searchOnFlipkart() throws Exception {
+		String strproductName = "iphone 13";
+		driver.get("https://www.flipkart.com/");
+		WebElement txtboxSearch= driver.findElement(By.name("q"));
+		txtboxSearch.sendKeys(strproductName);
+		txtboxSearch.sendKeys(Keys.ENTER);
+		System.out.println("Title of Page is " +driver.getTitle());
+		Thread.sleep(10000);
+	}
 
 @AfterTest
 	public void endTest() {

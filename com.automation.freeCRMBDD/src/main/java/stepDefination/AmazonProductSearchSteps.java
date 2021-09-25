@@ -28,7 +28,7 @@ public class AmazonProductSearchSteps {
 	@Given("^user is on Amazon Search Page$")
 	public void user_is_on_Amazon_Search_Page() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
-	//	searchPage.NavigateToAmazon();
+		searchPage.NavigateToAmazon();
 	}
 
 	@When("^user search for \"([^\"]*)\"$")
