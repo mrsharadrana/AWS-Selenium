@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [QA Automation]" parallel="tests">
+  <test name="Sprint 1">
+    <classes>
+      <class name="com.automation.aws.testing.test.HandleUnSelectableDrpdown"/>
+      <class name="com.automation.aws.testing.test.HandleSpecialDropDown"/>
+      <class name="com.automation.aws.testing.test.HandleCalender"/>
+      <class name="com.automation.aws.testing.test.Handle_Image_TC"/>
+      <class name="com.automation.aws.testing.test.GenericMethodForSelectDropdown"/>
+      <class name="com.automation.aws.testing.test.FluentWaitDemo"/>
+      <class name="com.automation.aws.testing.test.HandleUnSelectableDrpdown"/>
+    </classes>
+  </test> <!-- Sprint 1 -->
+  <test name="Sprint 1(failed)" parallel="tests">
+    <classes>
+      <class name="com.automation.aws.testing.test.Handle_Image_TC">
+        <methods>
+          <include name="brokenImage"/>
+        </methods>
+      </class> <!-- com.automation.aws.testing.test.Handle_Image_TC -->
+      <class name="com.automation.aws.testing.test.FluentWaitDemo">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- com.automation.aws.testing.test.FluentWaitDemo -->
+      <class name="com.automation.aws.testing.test.HandleCalender">
+        <methods>
+          <include name="tearDown"/>
+          <include name="CalenderDemo"/>
+        </methods>
+      </class> <!-- com.automation.aws.testing.test.HandleCalender -->
+      <class name="com.automation.aws.testing.test.HandleUnSelectableDrpdown">
+        <methods>
+          <include name="HandleKindoDropDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.automation.aws.testing.test.HandleUnSelectableDrpdown -->
+      <class name="com.automation.aws.testing.test.HandleSpecialDropDown">
+        <methods>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.aws.testing.test.HandleSpecialDropDown -->
+      <class name="com.automation.aws.testing.test.GenericMethodForSelectDropdown">
+        <methods>
+          <include name="DemoTest"/>
+        </methods>
+      </class> <!-- com.automation.aws.testing.test.GenericMethodForSelectDropdown -->
+    </classes>
+  </test> <!-- Sprint 1(failed) -->
+</suite> <!-- Failed suite [QA Automation] -->

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="tests">
+  <test name="Test1">
+    <classes>
+      <class name="test.Handle_Tool_Tips"/>
+    </classes>
+  </test> <!-- Test1 -->
+  <test name="Test2">
+    <classes>
+      <class name="test.GenericMethodForSelectDropdown"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test3">
+    <classes>
+      <class name="test.Handle_Image_TC"/>
+    </classes>
+  </test> <!-- Test3 -->
+  <test name="Test4">
+    <classes>
+      <class name="test.HandleSpecialDropDown"/>
+    </classes>
+  </test> <!-- Test4 -->
+  <test name="Test4(failed)" parallel="tests">
+    <classes>
+      <class name="test.Handle_Image_TC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Handle_Image_TC -->
+      <class name="test.GenericMethodForSelectDropdown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.GenericMethodForSelectDropdown -->
+      <class name="test.Handle_Tool_Tips">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Handle_Tool_Tips -->
+      <class name="test.HandleSpecialDropDown">
+        <methods>
+          <include name="SpecialDropDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.HandleSpecialDropDown -->
+    </classes>
+  </test> <!-- Test4(failed) -->
+  <test name="Test1(failed)" parallel="tests">
+    <classes>
+      <class name="test.Handle_Image_TC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Handle_Image_TC -->
+      <class name="test.GenericMethodForSelectDropdown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.GenericMethodForSelectDropdown -->
+      <class name="test.Handle_Tool_Tips">
+        <methods>
+          <include name="tearDown"/>
+          <include name="HandleToolTips"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Handle_Tool_Tips -->
+      <class name="test.HandleSpecialDropDown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.HandleSpecialDropDown -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <classes>
+      <class name="test.Handle_Image_TC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Handle_Image_TC -->
+      <class name="test.GenericMethodForSelectDropdown">
+        <methods>
+          <include name="DemoTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.GenericMethodForSelectDropdown -->
+      <class name="test.Handle_Tool_Tips">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.Handle_Tool_Tips -->
+      <class name="test.HandleSpecialDropDown">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.HandleSpecialDropDown -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

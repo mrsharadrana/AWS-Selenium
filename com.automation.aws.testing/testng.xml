@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="methods" thread-count="10">
+<test name="Test">
+
+
+<packages>
+    <!-- Packages who contains the test cases classes -->
+    <package name="test" />       
+</packages>
+  </test>
+</suite>

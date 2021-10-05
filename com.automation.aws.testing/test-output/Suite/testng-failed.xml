@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test">
+    <packages>
+      <package name="test"/>
+    </packages>
+    <classes>
+      <class name="test.ActionOperations"/>
+      <class name="test.DropDownfb"/>
+      <class name="test.FluentWaitDemo$1"/>
+      <class name="test.FluentWaitDemo"/>
+      <class name="test.FreeCRM_JavascriptExecutor"/>
+      <class name="test.GenericMethodForSelectDropdown"/>
+      <class name="test.HandleCalender"/>
+      <class name="test.HandleDynamicHTMLTable"/>
+      <class name="test.HandleDynamicWebTable"/>
+      <class name="test.HandleSpecialDropDown"/>
+      <class name="test.HandleTestDataUsingExcel"/>
+      <class name="test.HandleUnSelectableDrpdown"/>
+      <class name="test.Handle_Image_TC"/>
+      <class name="test.Handle_Tool_Tips"/>
+      <class name="test.Handling_IFrame"/>
+      <class name="test.Hashmap"/>
+      <class name="test.Input_Output_File"/>
+      <class name="test.InvokeBrowserUsingSearchContext"/>
+      <class name="test.Keyboard_Keys"/>
+      <class name="test.MockGeoLocation"/>
+      <class name="test.RelativeLocator"/>
+      <class name="test.Search_TC"/>
+      <class name="test.Search_Zomato_TC"/>
+      <class name="test.SpamCommentUtube"/>
+      <class name="test.StringJava"/>
+      <class name="test.SVG_Handling_TC"/>
+      <class name="test.TestPagefactory"/>
+      <class name="test.Uploading_of_file"/>
+      <class name="test.WriteExcel"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="test.FreeCRM_JavascriptExecutor">
+        <methods>
+          <include name="hradio_Btn"/>
+        </methods>
+      </class> <!-- test.FreeCRM_JavascriptExecutor -->
+      <class name="test.HandleCalender">
+        <methods>
+          <include name="CalenderDemo"/>
+        </methods>
+      </class> <!-- test.HandleCalender -->
+      <class name="test.FluentWaitDemo">
+        <methods>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+        </methods>
+      </class> <!-- test.FluentWaitDemo -->
+      <class name="test.Handle_Tool_Tips">
+        <methods>
+          <include name="HandleToolTips"/>
+        </methods>
+      </class> <!-- test.Handle_Tool_Tips -->
+      <class name="test.HandleTestDataUsingExcel">
+        <methods>
+          <include name="EnterGoogleSearch"/>
+        </methods>
+      </class> <!-- test.HandleTestDataUsingExcel -->
+      <class name="test.HandleUnSelectableDrpdown">
+        <methods>
+          <include name="HandleKindoDropDown"/>
+        </methods>
+      </class> <!-- test.HandleUnSelectableDrpdown -->
+      <class name="test.Handle_Image_TC">
+        <methods>
+          <include name="brokenImage"/>
+        </methods>
+      </class> <!-- test.Handle_Image_TC -->
+      <class name="test.HandleDynamicWebTable">
+        <methods>
+          <include name="HandleDynaicWebTableDemo"/>
+        </methods>
+      </class> <!-- test.HandleDynamicWebTable -->
+      <class name="test.HandleSpecialDropDown">
+        <methods>
+          <include name="SpecialDropDown"/>
+        </methods>
+      </class> <!-- test.HandleSpecialDropDown -->
+      <class name="test.SVG_Handling_TC">
+        <methods>
+          <include name="svgHandle"/>
+        </methods>
+      </class> <!-- test.SVG_Handling_TC -->
+      <class name="test.Handling_IFrame">
+        <methods>
+          <include name="Handling_youtubeIFrame"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.Handling_IFrame -->
+      <class name="test.Keyboard_Keys">
+        <methods>
+          <include name="test"/>
+        </methods>
+      </class> <!-- test.Keyboard_Keys -->
+      <class name="test.GenericMethodForSelectDropdown">
+        <methods>
+          <include name="DemoTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.GenericMethodForSelectDropdown -->
+      <class name="test.ActionOperations">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- test.ActionOperations -->
+      <class name="test.Input_Output_File">
+        <methods>
+          <include name="date"/>
+        </methods>
+      </class> <!-- test.Input_Output_File -->
+      <class name="test.RelativeLocator">
+        <methods>
+          <include name="RelativeLocatorDemo"/>
+        </methods>
+      </class> <!-- test.RelativeLocator -->
+      <class name="test.SpamCommentUtube">
+        <methods>
+          <include name="spamComment"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test.SpamCommentUtube -->
+      <class name="test.DropDownfb">
+        <methods>
+          <include name="tearDown"/>
+          <include name="dropDownFb"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- test.DropDownfb -->
+      <class name="test.Uploading_of_file">
+        <methods>
+          <include name="fileUpload"/>
+        </methods>
+      </class> <!-- test.Uploading_of_file -->
+      <class name="test.Search_TC">
+        <methods>
+          <include name="testCase1"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- test.Search_TC -->
+      <class name="test.HandleDynamicHTMLTable">
+        <methods>
+          <include name="HandleTable"/>
+        </methods>
+      </class> <!-- test.HandleDynamicHTMLTable -->
+      <class name="test.Search_Zomato_TC">
+        <methods>
+          <include name="endTest"/>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- test.Search_Zomato_TC -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
