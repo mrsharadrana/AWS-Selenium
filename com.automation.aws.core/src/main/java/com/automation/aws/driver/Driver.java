@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -51,6 +52,7 @@ public class Driver {
 	 */
 	@BeforeTest
 	public void setUp() throws Exception {
+		//Supress warning msg - now doesn't work
 //		System.setProperty("webdriver.chrome.silentOutput", "true");
 //		System.setProperty("webdriver.chrome.driver","./Library/chromedriver");
 		// For Linux
@@ -59,7 +61,7 @@ public class Driver {
 //		driver = new FirefoxDriver(); 
 		baseUrl = "https://automationeveryday.blogspot.com/";
 //	    baseUrl = "https://www.zomato.com/";
-	//	System.out.println("Navigated to :- " + baseUrl);
+//		System.out.println("Navigated to :- " + baseUrl);
 		// Maximize the browser
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
