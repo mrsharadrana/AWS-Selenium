@@ -1,32 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-05T13:24:50Z" name="Default suite" finished-at="2021-10-05T13:25:10Z" duration-ms="19944">
+  <suite started-at="2021-10-06T12:41:34Z" name="Default suite" finished-at="2021-10-06T12:41:41Z" duration-ms="7937">
     <groups>
     </groups>
-    <test started-at="2021-10-05T13:24:50Z" name="Default test" finished-at="2021-10-05T13:25:10Z" duration-ms="19944">
-      <class name="test.HandleCalender">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.HandleCalender@4007f65e]" started-at="2021-10-05T18:54:50Z" name="setUp" finished-at="2021-10-05T18:54:55Z" duration-ms="4654" status="PASS">
+    <test started-at="2021-10-06T12:41:34Z" name="Default test" finished-at="2021-10-06T12:41:41Z" duration-ms="7937">
+      <class name="test.Capture_Screenshots_TC">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test.Capture_Screenshots_TC@6f01b95f]" started-at="2021-10-06T18:11:34Z" name="setUp" finished-at="2021-10-06T18:11:37Z" duration-ms="3093" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="genericmethodSelectCalender()[pri:0, instance:test.HandleCalender@4007f65e]" started-at="2021-10-05T18:54:55Z" name="genericmethodSelectCalender" finished-at="2021-10-05T18:55:10Z" duration-ms="14994" status="PASS">
+        <test-method signature="testFullScreenshotUsingASHOT()[pri:0, instance:test.Capture_Screenshots_TC@6f01b95f]" started-at="2021-10-06T18:11:37Z" name="testFullScreenshotUsingASHOT" finished-at="2021-10-06T18:11:41Z" duration-ms="4583" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: unhandled inspector error: {"code":-32000,"message":"Cannot take screenshot with 0 width."}
+  (Session info: chrome=94.0.4606.71)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'XCLP-TU1-3478', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\3478\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c1f952d4e114e3f1f4412562017521d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unhandled inspector error: {"code":-32000,"message":"Cannot take screenshot with 0 width."}
+  (Session info: chrome=94.0.4606.71)
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'XCLP-TU1-3478', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.71, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\3478\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:62696}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6c1f952d4e114e3f1f4412562017521d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:238)
+	at org.openqa.selenium.remote.RemoteWebElement.getScreenshotAs(RemoteWebElement.java:361)
+	at com.automation.aws.utility.ScreenshotUtility.getListElementScreenshot(ScreenshotUtility.java:86)
+	at test.Capture_Screenshots_TC.testFullScreenshotUsingASHOT(Capture_Screenshots_TC.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- genericmethodSelectCalender -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.HandleCalender@4007f65e]" started-at="2021-10-05T18:55:10Z" name="tearDown" finished-at="2021-10-05T18:55:10Z" duration-ms="280" status="PASS">
+        </test-method> <!-- testFullScreenshotUsingASHOT -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:test.Capture_Screenshots_TC@6f01b95f]" started-at="2021-10-06T18:11:41Z" name="tearDown" finished-at="2021-10-06T18:11:41Z" duration-ms="238" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=genericmethodSelectCalender status=SUCCESS method=HandleCalender.genericmethodSelectCalender()[pri:0, instance:test.HandleCalender@4007f65e] output={null}]]]>
+                <![CDATA[[TestResult name=testFullScreenshotUsingASHOT status=FAILURE method=Capture_Screenshots_TC.testFullScreenshotUsingASHOT()[pri:0, instance:test.Capture_Screenshots_TC@6f01b95f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.HandleCalender -->
+      </class> <!-- test.Capture_Screenshots_TC -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

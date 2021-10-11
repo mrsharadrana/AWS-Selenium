@@ -1,32 +1,36 @@
 package test;
 
+import java.io.File;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
-import org.apache.hc.client5.http.classic.methods.HttpGet;
-import org.apache.http.HttpResponse;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
+import javax.imageio.ImageIO;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import com.automation.aws.driver.Driver;
-import com.automation.aws.utility.Screenshot;
+import com.automation.aws.utility.ScreenshotUtility;
 
 
 
-public class Capture_Screenshots_TC extends Driver{
-	
-	Screenshot screen = new Screenshot();
-	
+public class Capture_Screenshots_TC extends Driver {
+
 	@Test
-	public void captureFullShot() {
-		driver.get("https://www.guru99.com/take-screenshot-selenium-webdriver.html");
-		screen.getScreenshot(driver);
+   public  void testFullScreenshotUsingASHOT() {
+		driver.get("https://www.youtube.com/");
+		List <WebElement> LocatorEle = driver.findElements(By.xpath("//*[@id='thumbnail']//child:: img"));
+		ScreenshotUtility screenshot = new ScreenshotUtility();
+//		System.out.println(screenshot.getScreenshotViewScreen(driver));
+//		System.out.println(screenshot.getEntireScreenshot(driver));
+		screenshot.getListElementScreenshot(driver, LocatorEle);
 	}
-	publ
-}
+                
+    
+
+
+    }

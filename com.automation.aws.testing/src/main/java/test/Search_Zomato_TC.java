@@ -16,7 +16,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import com.automation.aws.driver.Driver;
-import com.automation.aws.utility.Screenshot;
+import com.automation.aws.utility.ScreenshotUtility;
 import com.automation.aws.utility.Web;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;

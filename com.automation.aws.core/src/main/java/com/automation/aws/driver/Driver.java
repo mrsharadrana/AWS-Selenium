@@ -21,7 +21,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.automation.aws.utility.CommonElementMethod;
-import com.automation.aws.utility.Screenshot;
+import com.automation.aws.utility.ScreenshotUtility;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
